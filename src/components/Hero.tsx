@@ -1,14 +1,14 @@
 export default function Hero() {
   return (
-    <section className="flex flex-col items-center justify-center py-24 px-4 text-center">
+    <section className="flex flex-col items-center justify-center py-28 px-6 text-center md:py-40">
       <h1
         className="font-bold uppercase leading-none text-white"
-        style={{ fontSize: "clamp(5rem, 18vw, 16rem)", letterSpacing: "-0.04em" }}
+        style={{ fontSize: "clamp(2.5rem, 7vw, 5.5rem)", letterSpacing: "-0.03em" }}
       >
         MOREPLAY
-        <sup style={{ fontSize: "0.3em", verticalAlign: "super" }}>™</sup>
+        <sup style={{ fontSize: "0.35em", verticalAlign: "super" }}>™</sup>
       </h1>
-      <p className="mt-6 text-xs tracking-widest text-white/50 uppercase">
+      <p className="mt-8 text-[10px] tracking-[0.3em] text-white/40 uppercase">
         STREETWEAR. PARAGUAY.
       </p>
     </section>
