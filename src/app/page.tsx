@@ -7,6 +7,7 @@ import { supabase } from "@/lib/supabase";
 import type { Product } from "@/lib/supabase";
 import Hero from "@/components/Hero";
 import ProductGrid from "@/components/ProductGrid";
+import ProductSection from "@/components/ProductSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -33,9 +34,13 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-black">
+    <main className="min-h-screen bg-black pb-0">
       <Hero />
       <ProductGrid products={products} />
+      <ProductSection title="REMERAS" />
+      <ProductSection title="CAMISAS" />
+      <ProductSection title="CARGOS" />
+      <ProductSection title="BERMUDAS" />
       <Footer />
     </main>
   );

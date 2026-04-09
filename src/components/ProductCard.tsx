@@ -48,35 +48,35 @@ export default function ProductCard({ product }: Props) {
 
       {/* Progress bar */}
       {images.length > 1 && (
-        <div className="h-[3px] bg-[#222]">
+        <div className="h-[2px] bg-[#1a1a1a]">
           <div
-            className="h-full bg-white transition-all duration-150"
+            className="h-full bg-white/60 transition-all duration-150"
             style={{ width: `${progress * 100}%` }}
           />
         </div>
       )}
 
       {/* Info */}
-      <div className="flex flex-col gap-1 p-3">
-        <span className="text-sm font-bold uppercase tracking-tight text-white">
+      <div className="flex flex-col gap-1 px-3 pt-3 pb-1">
+        <span className="text-[11px] font-bold uppercase tracking-tight text-white leading-snug">
           {name}
         </span>
-        <span className="text-sm text-white/60">{price}</span>
+        <span className="text-[11px] text-white/50">{price}</span>
       </div>
 
       {/* Button */}
-      <div className="p-3 pt-0">
+      <div className="px-3 pb-3 pt-2">
         {sold ? (
           <button
             disabled
-            className="w-full py-2 text-xs font-bold uppercase tracking-widest border border-white/10 text-white/30 cursor-not-allowed"
+            className="w-full py-2.5 text-[9px] font-bold uppercase tracking-[0.2em] border border-white/8 text-white/20 cursor-not-allowed"
           >
             AGOTADO
           </button>
         ) : (
           <button
             onClick={handleConsultar}
-            className="w-full py-2 text-xs font-bold uppercase tracking-widest border border-white text-white md:opacity-0 md:hover:opacity-100 transition-opacity duration-200"
+            className="w-full py-2.5 text-[9px] font-bold uppercase tracking-[0.2em] border border-white/30 text-white/80 active:bg-white active:text-black transition-colors duration-150 md:opacity-0 md:hover:opacity-100 md:focus:opacity-100"
           >
             CONSULTAR
           </button>
